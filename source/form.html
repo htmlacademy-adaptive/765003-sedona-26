@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -11,8 +12,8 @@
     <a class="main-header__logo" href="index.html">
       <img src="img/header-logo-phone.svg" width="185" height="96" alt="Sedona logotype">
     </a>
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -37,10 +38,11 @@
           </li>
         </ul>
       </div>
-      <div class="main-header__heading">
-        <img width="229" height="39" src="img/page-title.svg" alt="Welcome to Sedona">
-      </div>
     </nav>
+    <div class="main-header__intro">
+      <img class="main-header__picture" width="229" height="39" src="img/page-title.svg" alt="Welcome to Sedona">
+      <div class="main-header__triangle"></div>
+    </div>
   </header>
 
   <main class="main-container">
@@ -113,7 +115,7 @@
 
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <p class="hashtag">#visitsedona</p>
+      <p class="main-footer__hashtag hashtag">#visitsedona</p>
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -132,7 +134,9 @@
             </a>
           </li>
         </ul>
-        <div class="main-footer__copyright copyright">
+      </div>
+      <div class="main-footer__copyright copyright">
+        <div class="copyright__inner">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <img src="img/htmlacademy-footer.svg" width="27" height="35" alt="HTML logo">

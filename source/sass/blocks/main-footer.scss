@@ -1,0 +1,12 @@
+.main-footer {
+  padding-top: 39px;
+  padding-bottom: 23px;
+}
+
+.main-footer__wrapper {
+  @include wrapper;
+}
+
+.main-footer__hashtag {
+  margin-bottom: 33px;
+}

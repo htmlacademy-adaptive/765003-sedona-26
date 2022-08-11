@@ -1,0 +1,44 @@
+.main-header__wrapper {
+  @include wrapper;
+}
+
+.main-header__intro {
+  display: block;
+  box-sizing: border-box;
+  height: 158px;
+  padding-top: 52px;
+
+  background-image: url("../../img/header-back-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--index {
+    height: 389px;
+    padding-top: 90px;
+
+    background-image: url("../../img/header-back-mobile@1x.png");
+    background-position: center;
+  }
+}
+
+.main-header__picture {
+  display: block;
+
+  width: 229px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  &--index {
+    width: 282px;
+
+    margin-bottom: 28px;
+  }
+}
+
+.main-header__triangle {
+  height: 57px;
+
+  background-image: url("../../img/intro-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,9 @@
+.button {
+  display: block;
+
+  padding: 16px;
+
+  @include title-text(21px, $white);
+
+  background-color: $blue;
+}

@@ -1,0 +1,25 @@
+.hotels {
+  padding-top: 38px;
+  padding-bottom: 49px;
+}
+
+.hotels__title,
+.hotels__descriprion {
+  margin: 0;
+}
+
+.hotels__wrapper {
+  @include wrapper;
+}
+
+.hotels__title {
+  @include title-text(21px);
+
+  margin-bottom: 21px;
+}
+
+.hotels__descriprion {
+  margin-bottom: 32px;
+
+  text-align: center;
+}

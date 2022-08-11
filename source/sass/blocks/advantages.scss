@@ -1,0 +1,136 @@
+.advantages__slogan,
+.advantages__intro,
+.advantages__number,
+.advantages__description,
+.advantages__title {
+  margin: 0;
+}
+
+.advantages__intro {
+  text-align: center;
+}
+
+.advantages___triangle {
+  height: 37px;
+  margin-bottom: 33px;
+
+  background-image: url("../../img/intro-triangle-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__wrapper {
+  @include wrapper;
+}
+
+.advantages__header {
+  padding-top: 32px;
+}
+
+.advantages__slogan {
+  @include title-text;
+
+  margin-bottom: 35px;
+}
+
+.advantages__list {
+  background-color: $bg-grey;
+
+  @include list-style-reset;
+
+  &--sub {
+    @include wrapper;
+
+    padding-left: 65px;
+    padding-bottom: 52px;
+    padding-top: 31px;
+    box-sizing: border-box;
+
+    color: $black;
+    background-color: $white;
+  }
+}
+
+.advantages__background-sub {
+  background-color: $white;
+}
+
+.advantages__item {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  &--picture {
+    padding-top: 0;
+    padding-bottom: 0;
+    color: $white;
+    background-color: $blue;
+  }
+
+  &--bridge {
+    padding-top: 39px;
+    padding-bottom: 0;
+  }
+
+  &--sub {
+    padding-top: 0;
+    padding-bottom: 22px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.advantages__background {
+  height: 260px;
+
+  &--town {
+    background-image: url("../../img/background-city@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--bridge {
+    background-image: url("../../img/background-bridge@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.advantages__title {
+  @include title-text();
+
+  margin-bottom: 11px;
+
+  &--white {
+    color: $white;
+  }
+
+  &--sub {
+    margin-bottom: 16px;
+
+    color: $black;
+    text-align: left;
+  }
+}
+
+.advantages__number {
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+.advantages__description {
+  text-align: center;
+
+  &--sub {
+    text-align: left;
+  }
+
+  &--town {
+    margin-bottom: 40px;
+  }
+
+  &--bridge {
+    margin-bottom: 35px;
+  }
+}

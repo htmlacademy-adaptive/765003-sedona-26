@@ -1,0 +1,13 @@
+.text-input {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+
+  @include title-text(18px, $black, left);
+  border: 0;
+  background-color: $bg-input;
+
+  &--contact {
+    padding-right: 58px;
+  }
+}

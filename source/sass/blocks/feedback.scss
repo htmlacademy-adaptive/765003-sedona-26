@@ -1,3 +1,188 @@
 .feedback__wrapper {
   @include wrapper;
 }
+
+.feedback__fieldset {
+  @include wrapper;
+}
+
+.feedback__legend {
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.feedback__header {
+  position: relative;
+  padding-top: 36px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid $border-grey;
+}
+
+.feedback__border {
+  border-bottom: 1px solid $border-grey;
+}
+
+.feedback__headline {
+  @include title-text;
+
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.feedback__intro {
+  margin: 0;
+
+  text-align: center;
+}
+
+.feedback__input-wrapper {
+  position: relative;
+  margin-bottom: 16px;
+
+  &--phone {
+    &::after {
+      position: absolute;
+      content: "";
+      top: 20px;
+      right: 20px;
+      z-index: 2;
+
+      width: 18px;
+      height: 18px;
+
+      background-image: url("../../img/phone.svg");
+    }
+  }
+
+  &--mail {
+    margin-bottom: 33px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 23px;
+      right: 21px;
+      z-index: 2;
+
+      width: 16px;
+      height: 12px;
+
+      background-image: url("../../img/mail.svg");
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    z-index: 1;
+
+    width: 58px;
+    height: 58px;
+
+    background-color: $bg-input-icon;
+  }
+}
+
+.feedback__label {
+  display: block;
+  width: 100%;
+
+  &--choice {
+    @include title-text;
+
+    position: relative;
+
+    margin-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 62px;
+    box-sizing: border-box;
+
+    text-align: left;
+    text-transform: none;
+
+    &:last-child {
+      margin-bottom: 23px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      z-index: 1;
+
+      width: 46px;
+      height: 46px;
+
+      background-color: $bg-input;
+    }
+  }
+
+  &--radio {
+    &::before {
+      border-radius: 50%;
+    }
+  }
+}
+
+.feedback__radio-input:checked {
+  & + label::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+    background-color: $font-grey;
+  }
+}
+
+.feedback__checkbox-input:checked {
+  & + label::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 12px;
+    z-index: 1;
+
+    width: 22px;
+    height: 16px;
+
+    background-image: url("../../img/tick.svg");
+  }
+}
+
+.feedback__input {
+  margin-bottom: 16px;
+
+  &--patronymic {
+    margin-bottom: 39px;
+  }
+}
+
+.feedback__comment {
+  width: 100%;
+  min-height: 150px;
+}
+
+.feedback__submit {
+  width: 100%;
+  margin-top: 56px;
+
+  cursor: pointer;
+}
+
+.feedback__required-legend {
+  margin-top: 3px;
+  margin-bottom: 24px;
+
+  font-size: 12px;
+  text-align: right;
+}

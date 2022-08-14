@@ -1,9 +1,11 @@
 .button {
-  display: block;
-
-  padding: 16px;
-
   @include title-text(21px, $white);
 
+  display: block;
+  padding: 16px;
+  box-sizing: border-box;
+
+  text-transform: uppercase;
   background-color: $blue;
+  border: none;
 }

@@ -1,0 +1,67 @@
+.photos__wrapper {
+  @include wrapper;
+}
+
+.photos__header {
+  padding-top: 30px;
+  padding-bottom: 37px;
+}
+
+.photos__headline {
+  @include title-text;
+
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.photos__intro {
+  margin: 0;
+  text-align: center;
+}
+
+.photos__list {
+  @include list-style-reset;
+}
+
+.photos__item {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  border: 1px solid $border-grey;
+}
+
+.photos__content {
+  margin: 0;
+}
+
+.photos__link img {
+  display: block;
+}
+
+.photos__title {
+  margin-top: 15px;
+  margin-bottom: 5px;
+
+  font-size: 14px;
+}
+
+.photos__author {
+  margin-top: 0;
+  margin-bottom: 11px;
+  text-transform: none;
+}
+
+.photos__like-wrapper {
+  display: flex;
+}
+
+.photos__like {
+  display: block;
+}
+
+.photos__like-count {
+  @include title-text(14px);
+
+  margin: 0;
+  line-height: 21px;
+}

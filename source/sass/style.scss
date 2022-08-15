@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "global";
+@import "./blocks/site-list";
+@import "./blocks/main-header";
+@import "./blocks/main-nav";
+@import "./blocks/advantages";
+@import "./blocks/hotels";
+@import "./blocks/button";
+@import "./blocks/map";
+@import "./blocks/main-footer";
+@import "./blocks/hashtag";
+@import "./blocks/social";
+@import "./blocks/copyright";
+@import "./blocks/feedback";
+@import "./blocks/legend";
+@import "./blocks/fieldset";
+@import "./blocks/text-input";
+@import "./blocks/comment";
+@import "./blocks/photos";
+@import "./blocks/separator";
+@import "./blocks/videos";

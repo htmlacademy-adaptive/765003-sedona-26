@@ -1,0 +1,46 @@
+.videos__wrapper {
+  @include wrapper;
+}
+
+.videos__header {
+  padding-top: 17px;
+}
+
+.videos__headline {
+  @include title-text;
+
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+
+.videos__intro {
+  margin-top: 0;
+  margin-bottom: 38px;
+
+  text-align: center;
+}
+
+.videos__layout {
+  position: relative;
+}
+
+.videos__layout img {
+  display: block;
+}
+
+.videos__play-button {
+  position: absolute;
+  content: "";
+  left: 124px;
+  top: 63px;
+
+  width: 48px;
+  height: 54px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  background-image: url("../../img/play.svg");
+  background-color: transparent;
+  cursor: pointer;
+}

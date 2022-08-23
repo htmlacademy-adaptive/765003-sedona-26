@@ -1,18 +1,25 @@
 .site-list {
-  // display: none;
-
   @include list-style-reset;
 }
 
 .site-list__item a {
+  @include title-text(18px, $white);
   display: block;
 
   padding-top: 15px;
   padding-bottom: 14px;
+}
 
-  font-family: $font-bold;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  color: $white;
+@media (min-width: $tablet-width) {
+  .site-list__item a {
+    padding-top: 18px;
+    padding-bottom: 17px;
+    padding-left: 17px;
+    padding-right: 17px;
+    box-sizing: border-box;
+
+    font-size: 14px;
+    line-height: 21px;
+    color: $black;
+  }
 }

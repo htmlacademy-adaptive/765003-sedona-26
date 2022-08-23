@@ -10,6 +10,7 @@
 
 .hotels__wrapper {
   @include wrapper;
+  padding: 0 20px;
 }
 
 .hotels__title {
@@ -22,4 +23,28 @@
   margin-bottom: 32px;
 
   text-align: center;
+
+  & br {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hotels {
+    padding-top: 61px;
+    padding-bottom: 58px;
+  }
+
+  .hotels__wrapper {
+    width: 458px;
+    padding: 0;
+  }
+
+  .hotels__descriprion {
+    margin-bottom: 40px;
+
+    & br {
+      display: inline;
+    }
+  }
 }

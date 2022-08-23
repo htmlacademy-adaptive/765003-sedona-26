@@ -1,5 +1,6 @@
 .photos__wrapper {
   @include wrapper;
+  padding: 0 20px;
 }
 
 .photos__header {

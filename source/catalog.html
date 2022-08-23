@@ -3,17 +3,20 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img src="img/header-logo-phone.svg" width="185" height="96" alt="Sedona logotype">
-    </a>
-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="index.html">
+        <img src="img/header-logo-phone.svg" width="185" height="96" alt="Sedona logotype">
+      </a>
+    </div>
     <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -199,4 +202,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="./js/app.js"></script>
 </body>
+</html>

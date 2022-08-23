@@ -1,5 +1,6 @@
 .videos__wrapper {
   @include wrapper;
+  padding: 0 20px;
 }
 
 .videos__header {
@@ -36,7 +37,6 @@
 
   width: 48px;
   height: 54px;
-  margin: 0;
   padding: 0;
   border: 0;
 

@@ -27,14 +27,15 @@
   box-sizing: border-box;
   padding-top: 52px;
 
-  background-image: url("../../img/header-back-mobile@1x.jpg");
+  background-image: url("../img/header-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-color: $light-blue;
 
   &--index {
     padding-top: 90px;
 
-    background-image: url("../../img/header-back-mobile-index@1x.jpg");
+    background-image: url("../img/header-back-mobile-index@1x.jpg");
     background-position: center;
   }
 }
@@ -56,7 +57,7 @@
 .main-header__triangle {
   height: 57px;
 
-  background-image: url("../../img/intro-triangle.svg");
+  background-image: url("../img/intro-triangle.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -78,12 +79,12 @@
   .main-header__intro {
     padding-top: 95px;
 
-    background-image: url("../../img/header-back-desktop@1x.jpg");
+    background-image: url("../img/header-back-desktop@1x.jpg");
 
     &--index {
       padding-top: 77px;
 
-      background-image: url("../../img/header-back-desktop@1x.jpg");
+      background-image: url("../img/header-back-desktop@1x.jpg");
     }
   }
 

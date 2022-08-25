@@ -28,22 +28,25 @@
   padding-top: 24px;
   padding-bottom: 25px;
 
-  border: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
 }
 
 .photos__content {
-  margin: 0;
+  @include wrapper;
+  padding: 0 20px;
 }
 
-.photos__link img {
+.photos__image {
   display: block;
 }
 
 .photos__title {
-  margin-top: 15px;
-  margin-bottom: 5px;
+  @include title-text(14px, $black, left);
 
-  font-size: 14px;
+  line-height: 21px;
+
+  margin-top: 15px;
+  margin-bottom: 1px;
 }
 
 .photos__author {
@@ -65,4 +68,127 @@
 
   margin: 0;
   line-height: 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .photos__wrapper {
+    padding: 0 60px;
+
+    &--intro {
+      padding: 0 161px;
+    }
+  }
+
+  .photos__header {
+    padding-top: 61px;
+    padding-bottom: 77px;
+  }
+
+  .photos__headline {
+    font-size: 30px;
+  }
+
+  .photos__list {
+    @include wrapper;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 60px;
+  }
+
+  .photos__item {
+    padding: 0;
+    border-bottom: 0;
+
+    &--wide {
+      grid-column: span 2;
+    }
+  }
+
+  .photos__content {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .photos__image {
+    width: 324px;
+    height: 267px;
+
+    &--wide {
+      width: 648px;
+      height: 400px;
+    }
+  }
+
+  .photos__details {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 20px;
+
+    background-color: $bg-input;
+  }
+
+  .photos__title {
+    margin-top: 22px;
+  }
+
+  .photos__author {
+    margin-bottom: 15px;
+  }
+
+  .photos__like-wrapper {
+    align-self: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__header {
+    padding-top: 100px;
+  }
+
+  .photos__list {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+  }
+
+  .photos__item {
+    &--wide {
+      grid-column: span 3;
+    }
+  }
+
+  .photos__image {
+    width: 400px;
+
+    &--wide {
+      width: 1200px;
+    }
+  }
+
+  .photos__content {
+    position: relative;
+  }
+
+  .photos__details {
+    position: absolute;
+    bottom: 0;
+
+    width: 400px;
+    box-sizing: border-box;
+
+
+    background-color: rgba($black, 0.3);
+
+    &--wide {
+      width: 1200px;
+    }
+  }
+
+  .photos__title,
+  .photos__author,
+  .photos__like-count {
+    color: $white;
+  }
 }

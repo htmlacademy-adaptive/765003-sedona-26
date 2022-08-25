@@ -11,6 +11,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .site-list__item {
+    display: flex;
+    justify-content: center;
+
+    &--gap {
+      grid-column: 4;
+    }
+  }
+
   .site-list__item a {
     padding-top: 18px;
     padding-bottom: 17px;

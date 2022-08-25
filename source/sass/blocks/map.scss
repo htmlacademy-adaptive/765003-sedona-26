@@ -1,19 +1,19 @@
 .map__layout {
   height: 350px;
 
-  background-image: url("../../img/map-mobile.png");
+  background-image: url("../img/map-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 @media (min-width: $tablet-width) {
   .map__layout {
-    background-image: url("../../img/map-tablet.png");
+    background-image: url("../img/map-tablet.png");
   }
 }
 
 @media (min-width: $desktop-width) {
   .map__layout {
-    background-image: url("../../img/map-desktop.png");
+    background-image: url("../img/map-desktop.png");
   }
 }

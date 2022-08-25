@@ -46,15 +46,6 @@
     display: grid;
     grid-template-columns: repeat(5, 153px);
   }
-
-  .main-nav__item {
-    display: flex;
-    justify-content: center;
-
-    &--gap {
-      grid-column: 4;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {

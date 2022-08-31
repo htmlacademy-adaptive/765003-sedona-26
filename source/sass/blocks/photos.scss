@@ -61,12 +61,15 @@
 
 .photos__like {
   display: block;
+  margin-right: 14px;
 }
 
 .photos__like-count {
   @include title-text(14px);
 
   margin: 0;
+  padding-top: 2px;
+
   line-height: 21px;
 }
 
@@ -138,12 +141,20 @@
     margin-bottom: 15px;
   }
 
+  .photos__like {
+    margin-right: 9px;
+  }
+
   .photos__like-wrapper {
     align-self: center;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .photos__wrapper--intro {
+    padding: 0 377px;
+  }
+
   .photos__header {
     padding-top: 100px;
   }
@@ -184,6 +195,11 @@
     &--wide {
       width: 1200px;
     }
+  }
+
+  .photos__like path {
+    fill: $white;
+    opacity: 1;
   }
 
   .photos__title,

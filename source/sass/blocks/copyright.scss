@@ -3,16 +3,34 @@
   justify-content: center;
 }
 
-.copyright__inner {
+.copyright__link {
   display: flex;
   align-items: center;
+
+  outline: none;
+}
+
+.copyright__link:hover .copyright__text,
+.copyright__link:focus .copyright__text {
+  color: $blue;
+}
+
+.copyright__link:hover path,
+.copyright__link:focus path {
+  fill: $blue;
+}
+
+.copyright__link:active .copyright__text {
+  color: $brown-light;
+}
+
+.copyright__link:active path {
+  fill: $brown-light;
 }
 
 .copyright__text {
   margin: 0;
   margin-right: 12px;
-}
 
-.copyright__link img {
-  display: block;
+  color: $black;
 }

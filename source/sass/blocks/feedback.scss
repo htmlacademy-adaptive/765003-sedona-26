@@ -131,6 +131,25 @@
   }
 }
 
+.feedback__label--choice:hover::before {
+  background-color: $border-grey;
+}
+
+.feedback__radio-input:focus + .feedback__label--radio::before,
+.feedback__checkbox-input:focus + .feedback__label--choice::before {
+  background-color: $border-grey;
+}
+
+.feedback__label--choice:active {
+  &::before {
+    background-color: $grey-active;
+  }
+
+  &::after {
+    opacity: 0.3;
+  }
+}
+
 .feedback__radio-input:checked {
   & + label::after {
     position: absolute;
@@ -218,6 +237,12 @@
 
     &--choice {
       padding: 0 120px;
+    }
+  }
+
+  .feedback__input-wrapper {
+    &--mail {
+      margin-bottom: 0;
     }
   }
 

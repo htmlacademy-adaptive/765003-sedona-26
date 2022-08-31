@@ -10,9 +10,20 @@
   background-color: $bg-input;
   border: none;
   resize: none;
+  outline: none;
 
   &::placeholder {
     color: $black;
     opacity: 0.3;
+  }
+
+  &:hover {
+    background-color: $border-grey;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $white;
+    border: $border-grey solid 4px;
   }
 }

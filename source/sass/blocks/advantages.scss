@@ -71,6 +71,8 @@
   padding-top: 24px;
   padding-bottom: 24px;
 
+  text-align: center;
+
   &--picture {
     padding-top: 0;
     padding-bottom: 0;
@@ -84,11 +86,62 @@
   }
 
   &--sub {
+    position: relative;
     padding-top: 0;
     padding-bottom: 22px;
 
+    text-align: left;
+
     &:last-child {
       padding-bottom: 0;
+    }
+  }
+
+  &--sub-housing {
+    &::before {
+      position: absolute;
+      content: "";
+      left: -47px;
+      top: -8px;
+
+      width: 39px;
+      height: 37px;
+
+      background-image: url("../img/icon-house.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--sub-food {
+    &::before {
+      position: absolute;
+      content: "";
+      left: -52px;
+      top: -8px;
+
+      width: 40px;
+      height: 35px;
+
+      background-image: url("../img/icon-burger.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &--sub-souvenirs {
+    &::before {
+      position: absolute;
+      content: "";
+      left: -47px;
+      top: -8px;
+
+      width: 32px;
+      height: 38px;
+
+      background-image: url("../img/icon-gift.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }
@@ -126,17 +179,40 @@
 }
 
 .advantages__number {
-  text-align: center;
+  position: relative;
+
+  display: inline-block;
   margin-bottom: 17px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+
+    width: 8px;
+    height: 1px;
+
+    background-color: $white;
+  }
+
+  &::before {
+    left: -15px;
+  }
+
+  &::after {
+    right: -15px;
+  }
+}
+
+.advantages__item--bottom .advantages__number {
+  &::before,
+  &::after {
+    background-color: $font-grey;
+  }
 }
 
 .advantages__description {
-  text-align: center;
-
-  &--sub {
-    text-align: left;
-  }
-
   &--town {
     margin-bottom: 40px;
   }
@@ -201,8 +277,40 @@
       padding-top: 158px;
       padding-bottom: 59px;
 
+      text-align: center;
+
       &:last-child {
         padding-bottom: 59px;
+      }
+    }
+
+    &--sub-housing {
+      &::before {
+        top: 57px;
+        left: 82px;
+
+        width: 75px;
+        height: 72px;
+      }
+    }
+
+    &--sub-food {
+      &::before {
+        top: 57px;
+        left: 82px;
+
+        width: 76px;
+        height: 68px;
+      }
+    }
+
+    &--sub-souvenirs {
+      &::before {
+        top: 57px;
+        left: 92px;
+
+        width: 64px;
+        height: 75px;
       }
     }
 
@@ -236,10 +344,6 @@
     padding: 0 25px;
     box-sizing: border-box;
 
-    &--sub {
-      text-align: center;
-    }
-
     &--town {
       margin-bottom: 0;
     }
@@ -265,6 +369,26 @@
     &--sub,
     &--bottom {
       grid-template-columns: repeat(3, 387px);
+    }
+  }
+
+  .advantages__item {
+    &--sub-housing {
+      &::before {
+        left: 154px;
+      }
+    }
+
+    &--sub-food {
+      &::before {
+        left: 153px;
+      }
+    }
+
+    &--sub-souvenirs {
+      &::before {
+        left: 163px;
+      }
     }
   }
 

@@ -1,0 +1,6 @@
+@media (min-width: $desktop-width) {
+  .desktop-wrapper {
+    @include wrapper;
+    box-shadow: 0 5px 15px rgba(#000101, 0.2);
+  }
+}

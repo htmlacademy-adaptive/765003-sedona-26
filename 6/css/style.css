@@ -149,6 +149,7 @@ input[type=radio].visually-hidden {
   position: absolute;
   top: -56px;
   left: 67px;
+  z-index: 5;
 }
 .main-header__logo img {
   display: block;
@@ -156,8 +157,8 @@ input[type=radio].visually-hidden {
 
 .main-header__intro {
   display: block;
-  box-sizing: border-box;
   padding-top: 52px;
+  box-sizing: border-box;
   background-image: url("../img/header-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -166,11 +167,11 @@ input[type=radio].visually-hidden {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .main-header__intro {
     background-image: url("../img/header-back-mobile@2x.jpg");
-    background-size: 1804px auto;
-    background-position: center -55px;
+    background-size: 902px auto;
   }
 }
 .main-header__intro--index {
+  min-height: 389px;
   padding-top: 90px;
   background-image: url("../img/header-back-mobile-index@1x.jpg");
   background-position: center;
@@ -178,8 +179,7 @@ input[type=radio].visually-hidden {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .main-header__intro--index {
     background-image: url("../img/header-back-mobile-index@2x.jpg");
-    background-size: 1802px auto;
-    background-position: center -110px;
+    background-size: 901px auto;
   }
 }
 
@@ -223,8 +223,7 @@ input[type=radio].visually-hidden {
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .main-header__intro {
     background-image: url("../img/header-back-desktop@2x.jpg");
-    background-size: 2400px auto;
-    background-position: center -512px;
+    background-size: 1200px auto;
   }
 }
 @media (min-width: 768px) {
@@ -236,8 +235,7 @@ input[type=radio].visually-hidden {
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .main-header__intro--index {
     background-image: url("../img/header-back-desktop@2x.jpg");
-    background-size: 2400px auto;
-    background-position: center -142px;
+    background-size: 1200px auto;
   }
 }
 @media (min-width: 768px) {
@@ -257,6 +255,9 @@ input[type=radio].visually-hidden {
 
   .main-header__intro {
     padding-top: 101px;
+  }
+  .main-header__intro::after {
+    left: 0;
   }
   .main-header__intro--index {
     padding-top: 78px;
@@ -326,6 +327,7 @@ input[type=radio].visually-hidden {
   .main-nav {
     position: absolute;
     top: 0;
+    z-index: 10;
     width: 100%;
   }
   .main-nav--active .main-nav__list, .main-nav--nojs .main-nav__list {

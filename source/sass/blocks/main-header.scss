@@ -16,6 +16,7 @@
   position: absolute;
   top: -56px;
   left: 67px;
+  z-index: 5;
 
   & img {
     display: block;
@@ -24,8 +25,8 @@
 
 .main-header__intro {
   display: block;
-  box-sizing: border-box;
   padding-top: 52px;
+  box-sizing: border-box;
 
   background-image: url("../img/header-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -34,11 +35,11 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/header-back-mobile@2x.jpg");
-    background-size: 1804px auto;
-    background-position: center -55px;
+    background-size: 902px auto;
   }
 
   &--index {
+    min-height: 389px;
     padding-top: 90px;
 
     background-image: url("../img/header-back-mobile-index@1x.jpg");
@@ -46,8 +47,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/header-back-mobile-index@2x.jpg");
-      background-size: 1802px auto;
-      background-position: center -110px;
+      background-size: 901px auto;
     }
   }
 }
@@ -95,8 +95,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/header-back-desktop@2x.jpg");
-      background-size: 2400px auto;
-      background-position: center -512px;
+      background-size: 1200px auto;
     }
 
     &--index {
@@ -106,8 +105,7 @@
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/header-back-desktop@2x.jpg");
-        background-size: 2400px auto;
-        background-position: center -142px;
+        background-size: 1200px auto;
       }
     }
   }
@@ -130,6 +128,10 @@
 
   .main-header__intro {
     padding-top: 101px;
+
+    &::after {
+      left: 0;
+    }
 
     &--index {
       padding-top: 78px;

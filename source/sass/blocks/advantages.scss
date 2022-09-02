@@ -146,9 +146,14 @@
   }
 }
 
+.advantages__image-wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .advantages__image {
   display: block;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .advantages__background {
@@ -213,7 +218,7 @@
 }
 
 .advantages__description {
-  &--town {
+  &--city {
     margin-bottom: 40px;
   }
 
@@ -324,11 +329,16 @@
     }
   }
 
-  .advantages__image {
+  .advantages__image-wrapper {
     width: 512px;
-    height: 256px;
     margin: 0;
   }
+
+  // .advantages__image {
+  //   width: 512px;
+  //   height: auto;
+  //   margin: 0;
+  // }
 
   .advantages__title {
     font-size: 21px;
@@ -344,7 +354,7 @@
     padding: 0 25px;
     box-sizing: border-box;
 
-    &--town {
+    &--city {
       margin-bottom: 0;
     }
 
@@ -361,9 +371,13 @@
     }
   }
 
-  .advantages__image {
+  .advantages__image-wrapper {
     width: 800px;
   }
+
+  // .advantages__image {
+  //   width: 800px;
+  // }
 
   .advantages__list {
     &--sub,

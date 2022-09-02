@@ -32,11 +32,23 @@
   background-position: center bottom;
   background-color: $light-blue;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header-back-mobile@2x.jpg");
+    background-size: 1804px auto;
+    background-position: center -55px;
+  }
+
   &--index {
     padding-top: 90px;
 
     background-image: url("../img/header-back-mobile-index@1x.jpg");
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header-back-mobile-index@2x.jpg");
+      background-size: 1802px auto;
+      background-position: center -110px;
+    }
   }
 }
 
@@ -81,10 +93,22 @@
 
     background-image: url("../img/header-back-desktop@1x.jpg");
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header-back-desktop@2x.jpg");
+      background-size: 2400px auto;
+      background-position: center -512px;
+    }
+
     &--index {
       padding-top: 77px;
 
       background-image: url("../img/header-back-desktop@1x.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/header-back-desktop@2x.jpg");
+        background-size: 2400px auto;
+        background-position: center -142px;
+      }
     }
   }
 

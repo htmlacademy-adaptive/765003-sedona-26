@@ -110,21 +110,10 @@
   }
 
   .photos__content {
-    // width: auto;
     width: 100%;
     margin: 0;
     padding: 0;
   }
-
-  // .photos__image {
-  //   width: 324px;
-  //   height: 267px;
-
-  //   &--wide {
-  //     width: 648px;
-  //     height: 400px;
-  //   }
-  // }
 
   .photos__details {
     display: flex;
@@ -171,14 +160,6 @@
       grid-column: span 3;
     }
   }
-
-  // .photos__image {
-  //   width: 400px;
-
-  //   &--wide {
-  //     width: 1200px;
-  //   }
-  // }
 
   .photos__content {
     position: relative;

@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -74,11 +78,18 @@
               <div class="advantages__wrapper advantages__wrapper--picture">
                 <h3 class="advantages__title advantages__title--picture">Настоящий городок</h3>
                 <p class="advantages__number">№1</p>
-                <p class="advantages__description advantages__description--town">
+                <p class="advantages__description advantages__description--city">
                   Седона не аттракцион для туристов, там течет твоя жизнь
                 </p>
               </div>
-              <img class="advantages__image" width="320" height="260" src="./img/advantages-city-mob@1x.jpg">
+              <div class="advantages__image-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/advantages-city-desktop@1x.jpg 1x, img/advantages-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/advantages-city-tablet@1x.jpg 1x, img/advantages-city-tablet@2x.jpg 2x">
+                  <img class="advantages__image" width="320" height="260" src="img/advantages-city-mob@1x.jpg"
+                    srcset="img/advantages-city-mob@2x.jpg 2x" alt="Sedona city building">
+                </picture>
+              </div>
             </div>
             <div class="advantages__background--sub">
               <ul class="advantages__list advantages__list--sub">
@@ -118,7 +129,14 @@
                   Да, по нему можно пройти! Если вы осмелитесь, конечно
                 </p>
               </div>
-              <img class="advantages__image" width="320" height="260" src="./img/advantages-bridge-mob@1x.jpg">
+              <div class="advantages__image-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/advantages-bridge-desktop@1x.jpg 1x, img/advantages-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/advantages-bridge-tablet@1x.jpg 1x, img/advantages-bridge-tablet@2x.jpg 2x">
+                  <img class="advantages__image" width="320" height="260" src="./img/advantages-bridge-mob@1x.jpg"
+                    srcset="img/advantages-bridge-mob@2x.jpg 2x" alt="Devil's bridge">
+                </picture>
+              </div>
             </div>
           </li>
         </ul>

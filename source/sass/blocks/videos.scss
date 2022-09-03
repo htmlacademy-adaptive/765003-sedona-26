@@ -27,6 +27,7 @@
 
 .videos__image {
   display: block;
+  width: 100%;
 }
 
 .videos__play-button {
@@ -40,7 +41,7 @@
   padding: 0;
   border: 0;
 
-  background-image: url("../../img/play.svg");
+  background-image: url("../img/play.svg");
   background-color: transparent;
   cursor: pointer;
 }
@@ -65,9 +66,8 @@
     font-size: 30px;
   }
 
-  .videos__image {
+  .videos__layout {
     width: 648px;
-    height: 500px;
   }
 
   .videos__play-button {
@@ -91,12 +91,12 @@
     padding-right: 378px;
   }
 
-  .videos__image {
+  .videos__layout {
     width: 800px;
     margin: 0 auto;
   }
 
   .videos__play-button {
-    left: 575px;
+    left: 376px;
   }
 }

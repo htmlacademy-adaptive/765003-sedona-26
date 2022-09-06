@@ -6,31 +6,21 @@
 .copyright__link {
   display: flex;
   align-items: center;
+  color: $black;
 
   outline: none;
-}
 
-.copyright__link:hover .copyright__text,
-.copyright__link:focus .copyright__text {
-  color: $blue;
-}
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
 
-.copyright__link:hover path,
-.copyright__link:focus path {
-  fill: $blue;
-}
-
-.copyright__link:active .copyright__text {
-  color: $brown-light;
-}
-
-.copyright__link:active path {
-  fill: $brown-light;
+  &:active {
+    color: $brown-light;
+  }
 }
 
 .copyright__text {
   margin: 0;
   margin-right: 12px;
-
-  color: $black;
 }

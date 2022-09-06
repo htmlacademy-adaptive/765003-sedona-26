@@ -63,6 +63,12 @@
 .photos__like {
   display: block;
   margin-right: 14px;
+
+  color: $black;
+}
+
+.photos__like svg {
+  opacity: 0.3;
 }
 
 .photos__like-count {
@@ -172,7 +178,6 @@
     width: 400px;
     box-sizing: border-box;
 
-
     background-color: rgba($black, 0.3);
 
     &--wide {
@@ -180,13 +185,13 @@
     }
   }
 
-  .photos__like path {
-    fill: $white;
+  .photos__like svg {
     opacity: 1;
   }
 
   .photos__title,
   .photos__author,
+  .photos__like,
   .photos__like-count {
     color: $white;
   }

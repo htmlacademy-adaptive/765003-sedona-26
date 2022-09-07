@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -17,7 +17,7 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo">
-          <img src="img/header-logo-phone.svg" width="185" height="96" alt="Sedona logotype">
+          <img src="img/header-logo.svg" width="185" height="96" alt="Sedona logotype">
         </a>
       </div>
       <nav class="main-nav main-nav--nojs">
@@ -84,6 +84,9 @@
               </div>
               <div class="advantages__image-wrapper">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages-city-desktop@1x.webp 1x, img/advantages-city-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages-city-tablet@1x.webp 1x, img/advantages-city-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/advantages-city-mob@1x.webp 1x, img/advantages-city-mob@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/advantages-city-desktop@1x.jpg 1x, img/advantages-city-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/advantages-city-tablet@1x.jpg 1x, img/advantages-city-tablet@2x.jpg 2x">
                   <img class="advantages__image" width="320" height="260" src="img/advantages-city-mob@1x.jpg"
@@ -131,6 +134,9 @@
               </div>
               <div class="advantages__image-wrapper">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages-bridge-desktop@1x.webp 1x, img/advantages-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages-bridge-tablet@1x.webp 1x, img/advantages-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/advantages-bridge-mob@1x.webp 1x, img/advantages-bridge-mob@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/advantages-bridge-desktop@1x.jpg 1x, img/advantages-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/advantages-bridge-tablet@1x.jpg 1x, img/advantages-bridge-tablet@2x.jpg 2x">
                   <img class="advantages__image" width="320" height="260" src="./img/advantages-bridge-mob@1x.jpg"
@@ -234,7 +240,7 @@
     </footer>
   </div>
 
-  <script src="./js/app.js"></script>
+  <script src="js/app.min.js"></script>
 </body>
 
 </html>

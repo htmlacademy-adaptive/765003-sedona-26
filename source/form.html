@@ -49,7 +49,6 @@
       </nav>
       <div class="main-header__intro">
         <img class="main-header__picture" width="229" height="39" src="img/page-title.svg" alt="Welcome to Sedona">
-        <div class="main-header__triangle"></div>
       </div>
     </header>
 
@@ -68,8 +67,8 @@
 
         <form class="feedback__form" action="#" method="post">
           <div class="feedback__container-user">
-            <fieldset class="feedback__fieldset feedback__fieldset--name fieldset">
-              <legend class="feedback__legend feedback__legend--name legend">Представьтесь:</legend>
+            <fieldset class="feedback__fieldset feedback__fieldset--name">
+              <legend class="feedback__legend feedback__legend--name">Представьтесь:</legend>
               <label class="feedback__label feedback__label--text" for="name">Имя*:</label>
               <input class="feedback__input text-input" type="text" id="name" name="name" value="Пётр" required>
               <label class="feedback__label feedback__label--text" for="surname">Фамилия*:</label>
@@ -81,8 +80,8 @@
             </fieldset>
             <hr class="separator">
 
-            <fieldset class="feedback__fieldset feedback__fieldset--contacts fieldset">
-              <legend class="feedback__legend feedback__legend--contacts legend">Контактная информация:</legend>
+            <fieldset class="feedback__fieldset feedback__fieldset--contacts">
+              <legend class="feedback__legend feedback__legend--contacts">Контактная информация:</legend>
                 <div class="feedback__inner-contacts">
                   <label class="feedback__label feedback__label--text" for="phone">Контактный телефон*:</label>
                   <div class="feedback__input-wrapper feedback__input-wrapper--phone">
@@ -97,8 +96,8 @@
             <hr class="separator">
           </div>
 
-          <fieldset class="feedback__fieldset feedback__fieldset--choice fieldset">
-            <legend class="feedback__legend feedback__legend--choice legend">Ваше общее впечатление:</legend>
+          <fieldset class="feedback__fieldset feedback__fieldset--choice">
+            <legend class="feedback__legend feedback__legend--choice">Ваше общее впечатление:</legend>
             <div class="feedback__inner-impressions">
               <input class="feedback__radio-input visually-hidden" type="radio" name="impression" id="good" value="good" checked>
               <label class="feedback__label feedback__label--choice feedback__label--radio" for="good">Скорее положительное</label>
@@ -110,8 +109,8 @@
           </fieldset>
           <hr class="separator">
 
-          <fieldset class="feedback__fieldset feedback__fieldset--choice fieldset">
-            <legend class="feedback__legend feedback__legend--choice legend">Посещенные<br> достопримечательности:</legend>
+          <fieldset class="feedback__fieldset feedback__fieldset--choice feedback__fieldset--places">
+            <legend class="feedback__legend feedback__legend--choice">Посещенные<br> достопримечательности:</legend>
             <div class="feedback__inner-places">
               <input class="feedback__checkbox-input visually-hidden" type="checkbox" name="place" id="bridge" value="bridge" checked>
               <label class="feedback__label feedback__label--choice" for="bridge">Мост Дьявола</label>
@@ -125,8 +124,8 @@
           </fieldset>
           <hr class="separator">
 
-          <fieldset class="feedback__fieldset feedback__fieldset--comment fieldset">
-            <legend class="feedback__legend legend">Опишите свои эмоции:</legend>
+          <fieldset class="feedback__fieldset feedback__fieldset--comment feedback__fieldset--choice">
+            <legend class="feedback__legend feedback__legend--choice">Опишите свои эмоции:</legend>
             <textarea class="feedback__comment comment" name="comment" cols="30" rows="3"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
@@ -171,7 +170,7 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             <p class="copyright__text">Разработано</p>
             <svg width="27" height="35">
               <use xlink:href="img/sprite.svg#copyright-logo"></use>
@@ -197,7 +196,7 @@
     <h2 class="visually-hidden">Сообщение об успешной отправке отзыва</h2>
     <div class="modal__container modal__container--success">
       <div class="modal__wrapper modal__wrapper--success">
-        <p class="modal__title">Ваш отзыв отправлен!</p>
+        <p class="modal__title modal__title--success">Ваш отзыв отправлен!</p>
         <p class="modal__description modal__description--success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
       </div>
         <div class="modal__button-wrapper">

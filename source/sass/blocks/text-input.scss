@@ -10,10 +10,6 @@
 
   outline: none;
 
-  &--contact {
-    padding-right: 58px;
-  }
-
   &:hover {
     background-color: $border-grey;
   }
@@ -21,7 +17,17 @@
   &:focus,
   &:active {
     padding-left: 12px;
+    padding-right: 12px;
     background-color: $white;
     border: $border-grey solid 4px;
+  }
+
+  &--contact {
+    padding-right: 58px;
+
+    &:focus,
+    &:active {
+      padding-right: 58px;
+    }
   }
 }

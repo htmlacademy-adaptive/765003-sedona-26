@@ -23,8 +23,7 @@
 
   &:focus,
   &:active {
-    padding-left: 12px;
-    padding-top: 12px;
+    padding: 12px;
     background-color: $white;
     border: $border-grey solid 4px;
   }

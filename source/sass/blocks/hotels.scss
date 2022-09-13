@@ -1,5 +1,5 @@
 .hotels {
-  padding-top: 38px;
+  padding-top: 40px;
   padding-bottom: 49px;
 }
 
@@ -31,7 +31,7 @@
 
 @media (min-width: $tablet-width) {
   .hotels {
-    padding-top: 61px;
+    padding-top: 60px;
     padding-bottom: 58px;
   }
 
@@ -40,11 +40,26 @@
     padding: 0;
   }
 
+  .hotels__title {
+    margin-bottom: 32px;
+    font-size: 30px;
+  }
+
   .hotels__descriprion {
-    margin-bottom: 40px;
+    margin-bottom: 41px;
 
     & br {
       display: inline;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hotels {
+    padding-bottom: 67px;
+  }
+
+  .hotels__descriprion {
+    margin-bottom: 47px;
   }
 }

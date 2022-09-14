@@ -184,14 +184,12 @@
   width: 100%;
 }
 
-.advantages__background {
-  &--sub {
-    background-color: $white;
-  }
+.advantages__background-sub {
+  background-color: $white;
+}
 
-  &--bottom {
-    background-color: #eeeeee;
-  }
+.advantages__background-bottom {
+  background-color: #eeeeee;
 }
 
 .advantages__title {
@@ -359,6 +357,8 @@
     &--bottom {
       padding-top: 43px;
       padding-bottom: 43px;
+
+      border-bottom: none;
 
       &:first-child {
         padding-left: 14px;

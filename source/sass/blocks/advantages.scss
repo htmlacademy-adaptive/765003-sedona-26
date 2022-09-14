@@ -16,7 +16,7 @@
 
 .advantages___triangle {
   height: 37px;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
 
   background-image: url("../img/intro-triangle-bottom.svg");
   background-repeat: no-repeat;
@@ -32,7 +32,7 @@
   @include wrapper;
 
   padding: 0 20px;
-  padding-top: 32px;
+  padding-top: 34px;
   margin-bottom: 16px;
 }
 
@@ -80,6 +80,25 @@
     background-color: $blue;
   }
 
+  &--city {
+    position: relative;
+    padding-top: 70px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 37px;
+
+      background-image: url("../img/intro-triangle-bottom.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
   &--bridge {
     padding-top: 39px;
     padding-bottom: 0;
@@ -88,7 +107,7 @@
   &--sub {
     position: relative;
     padding-top: 0;
-    padding-bottom: 22px;
+    padding-bottom: 30px;
 
     text-align: left;
 
@@ -102,7 +121,7 @@
       position: absolute;
       content: "";
       left: -47px;
-      top: -8px;
+      top: -6px;
 
       width: 39px;
       height: 37px;
@@ -117,8 +136,8 @@
     &::before {
       position: absolute;
       content: "";
-      left: -52px;
-      top: -8px;
+      left: -46px;
+      top: -6px;
 
       width: 40px;
       height: 35px;
@@ -133,7 +152,7 @@
     &::before {
       position: absolute;
       content: "";
-      left: -47px;
+      left: -43px;
       top: -8px;
 
       width: 32px;
@@ -142,6 +161,15 @@
       background-image: url("../img/icon-gift.svg");
       background-repeat: no-repeat;
       background-size: cover;
+    }
+  }
+
+  &--bottom {
+    padding-top: 26px;
+    border-bottom: 1px solid $bg-grey;
+
+    &:last-child {
+      border-bottom: none;
     }
   }
 }
@@ -162,7 +190,7 @@
   }
 
   &--bottom {
-    background-color: $bg-grey;
+    background-color: #eeeeee;
   }
 }
 
@@ -248,8 +276,8 @@
     &--picture {
       width: 256px;
       margin: 0;
-      padding-top: 40px;
-      padding-bottom: 44px;
+      padding-top: 42px;
+      padding-bottom: 41px;
     }
   }
 
@@ -257,12 +285,17 @@
     width: 520px;
     padding-left: 0;
     padding-right: 0;
-    padding-top: 47px;
+    padding-top: 49px;
     margin-bottom: 55px;
   }
 
   .advantages___triangle {
     display: none;
+  }
+
+  .advantages__slogan {
+    font-size: 21px;
+    margin-bottom: 29px;
   }
 
   .advantages__list {
@@ -290,9 +323,11 @@
     }
 
     &--sub-housing {
+      padding-left: 14px;
+
       &::before {
-        top: 57px;
-        left: 82px;
+        top: 60px;
+        left: 89px;
 
         width: 75px;
         height: 72px;
@@ -301,7 +336,7 @@
 
     &--sub-food {
       &::before {
-        top: 57px;
+        top: 63px;
         left: 82px;
 
         width: 76px;
@@ -310,9 +345,11 @@
     }
 
     &--sub-souvenirs {
+      padding-right: 14px;
+
       &::before {
         top: 57px;
-        left: 92px;
+        left: 80px;
 
         width: 64px;
         height: 75px;
@@ -320,8 +357,24 @@
     }
 
     &--bottom {
-      padding-top: 41px;
-      padding-bottom: 41px;
+      padding-top: 43px;
+      padding-bottom: 43px;
+
+      &:first-child {
+        padding-left: 14px;
+      }
+
+      &:last-child {
+        padding-right: 14px;
+      }
+    }
+
+    &--city {
+      padding-top: 0;
+
+      &::before {
+        content: none;
+      }
     }
 
     &--bridge {
@@ -340,8 +393,15 @@
     box-sizing: border-box;
 
     &--sub {
+      margin-bottom: 23px;
+      padding: 0 20px;
+
       text-align: center;
     }
+  }
+
+  .advantages__number {
+    margin-bottom: 24px;
   }
 
   .advantages__description {
@@ -354,6 +414,15 @@
 
     &--bridge {
       margin-bottom: 0;
+      padding: 0 30px;
+    }
+
+    &--sub {
+      padding: 0 18px;
+    }
+
+    &--bottom {
+      padding: 0 34px;
     }
   }
 }
@@ -362,11 +431,17 @@
   .advantages__wrapper {
     &--picture {
       width: 400px;
+      padding-top: 48px;
     }
   }
 
   .advantages__image-wrapper {
     width: 800px;
+  }
+
+  .advantages__header {
+    margin-bottom: 43px;
+    padding-top: 61px;
   }
 
   .advantages__list {
@@ -377,9 +452,13 @@
   }
 
   .advantages__item {
+    &--sub {
+      padding-bottom: 81px;
+    }
+
     &--sub-housing {
       &::before {
-        left: 154px;
+        left: 160px;
       }
     }
 
@@ -391,8 +470,12 @@
 
     &--sub-souvenirs {
       &::before {
-        left: 163px;
+        left: 153px;
       }
+    }
+
+    &--bottom {
+      padding-bottom: 63px;
     }
   }
 
@@ -402,5 +485,9 @@
 
   .advantages__description {
     padding: 0 55px;
+
+    &--bridge {
+      padding: 0 90px;
+    }
   }
 }

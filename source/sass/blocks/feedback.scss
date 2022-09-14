@@ -26,7 +26,9 @@
 
 .feedback__fieldset {
   @include wrapper;
+
   padding: 0 20px;
+  border: none;
 
   &--comment {
     margin-bottom: 56px;
@@ -34,7 +36,9 @@
 }
 
 .feedback__legend {
-  padding-top: 24px;
+  @include title-text;
+
+  padding-top: 25px;
   padding-bottom: 20px;
 }
 
@@ -91,6 +95,11 @@
 .feedback__label {
   display: block;
   width: 100%;
+  box-sizing: border-box;
+
+  &--text {
+    padding-left: 16px;
+  }
 
   &--choice {
     @include title-text;
@@ -101,7 +110,6 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 62px;
-    box-sizing: border-box;
 
     text-align: left;
     text-transform: none;
@@ -191,7 +199,7 @@
 
 .feedback__comment {
   width: 100%;
-  min-height: 150px;
+  height: 150px;
 }
 
 .feedback__submit {
@@ -212,21 +220,22 @@
   .feedback__header {
     width: 435px;
     padding-top: 64px;
-    padding-bottom: 102px;
+    padding-bottom: 106px;
     padding-left: 0;
     padding-right: 0;
   }
 
   .feedback__headline {
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   .feedback__legend {
     padding: 0;
+    font-size: 21px;
 
     &--name {
-      padding-left: 25px;
+      padding-left: 42px;
       margin-bottom: 28px;
     }
 
@@ -236,7 +245,9 @@
     }
 
     &--choice {
-      padding: 0 120px;
+      width: 402px;
+      padding: 0 20px;
+      box-sizing: border-box;
     }
   }
 
@@ -248,6 +259,8 @@
 
   .feedback__container-user {
     @include wrapper;
+
+    position: relative;
     display: flex;
     justify-content: space-between;
 
@@ -282,25 +295,37 @@
   }
 
   .feedback__fieldset {
+    width: 648px;
+    padding: 0;
+
     &--name {
+      position: relative;
       width: 280px;
-      padding: 0;
       margin: 0;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: -54px;
+        right: -42px;
+
+        width: 1px;
+        height: 338px;
+        background-color: $fieldset-line;
+      }
     }
 
     &--contacts {
       width: 298px;
-      padding: 0;
       margin: 0;
     }
 
     &--choice {
-      padding: 0 60px;
+      border-top: 1px solid $fieldset-line;
     }
 
     &--comment {
       margin-bottom: 48px;
-      padding: 0 60px;
     }
   }
 
@@ -333,19 +358,26 @@
   }
 
   .feedback__comment {
+    height: 160px;
     margin-top: 28px;
   }
 
   .feedback__required-legend {
     margin-top: 0;
+
+    font-size: 14px;
     align-self: center;
   }
 }
 
 @media (min-width: $desktop-width) {
   .feedback__header {
-    padding-top: 115px;
-    padding-bottom: 66px;
+    padding-top: 113px;
+    padding-bottom: 70px;
+  }
+
+  .feedback__headline {
+    margin-bottom: 32px;
   }
 
   .feedback__container-user {
@@ -358,17 +390,17 @@
   }
 
   .feedback__inner-impressions {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 280px 280px auto;
     gap: 28px;
-
     width: 854px;
     margin-top: 45px;
     margin-bottom: 73px;
   }
 
   .feedback__inner-places {
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 46px;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 64px;
+    row-gap: 28px;
 
     width: 871px;
     margin-top: 59px;
@@ -378,6 +410,10 @@
   .feedback__fieldset {
     &--name {
       width: 430px;
+
+      &::after {
+        right: -65px;
+      }
     }
 
     &--contacts {
@@ -385,17 +421,27 @@
     }
 
     &--choice {
-      padding: 0 120px;
+      width: 960px;
+      padding: 0 53px;
+    }
+
+    &--places {
+      padding: 0 44px;
     }
 
     &--comment {
-      padding: 0 120px;
+      width: 960px;
+      padding: 0 96px;
     }
   }
 
   .feedback__legend {
     &--contacts {
       padding-right: 60px;
+    }
+
+    &--name {
+      padding-left: 64px;
     }
   }
 

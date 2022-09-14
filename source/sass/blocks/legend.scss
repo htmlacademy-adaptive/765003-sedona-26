@@ -1,9 +1,0 @@
-.legend {
-  @include title-text;
-}
-
-@media (min-width: $tablet-width) {
-  .legend {
-    font-size: 21px;
-  }
-}
